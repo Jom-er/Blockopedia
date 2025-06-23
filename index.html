@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Blockopedia - Minecraft Bedrock Edition Addons</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1, h2 {
+  font-family: 'Press Start 2P', cursive;
+}
+#menu-btn i {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+#menu-btn.open i {
+  transform: rotate(90deg);
+}
+</style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col">
+<header class="bg-green-700 shadow-md sticky top-0 z-50">
+  <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center space-x-3 logo-container">
+      <a href="./index.html"><img alt="Blockopedia" height="1024" src="./images/logo/website/website_logo.png" width="266"/></a>
+    </div>
+    <nav class="hidden md:flex space-x-8 text-lg font-semibold">
+      <a class="hover:text-green-300 transition" href="./webpages/tutorials.html">Tutorials</a>
+      <a class="hover:text-green-300 transition" href="./webpages/downloads.html">Downloads</a>
+      <a class="hover:text-green-300 transition" href="./webpages/templates.html">Template</a>
+    </nav>
+    <button aria-label="Toggle menu" class="md:hidden focus:outline-none text-green-300" id="menu-btn">
+      <i class="fas fa-bars fa-lg"></i>
+    </button>
+  </div>
+  <nav class="md:hidden bg-green-800 text-green-100 hidden flex-col space-y-2 px-6 py-4" id="mobile-menu">
+    <a class="hover:text-green-300 transition" href="./webpages/tutorials.html">Tutorials</a>
+    <a class="hover:text-green-300 transition" href="./webpages/downloads.html">Downloads</a>
+    <a class="hover:text-green-300 transition" href="./webpages/templates.html">Template</a>
+  </nav>
+</header>
+
+<main class="flex-grow container mx-auto px-6 py-10">
+  <section class="text-center max-w-4xl mx-auto mb-16">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4 text-green-400">Welcome to Blockopedia</h2>
+    <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+      Your ultimate resource for Minecraft Bedrock Edition addons. Discover the best addons, learn how to create your own with step-by-step tutorials, and master their use to enhance your gameplay.
+    </p>
+  </section>
+  <section class="mb-20 max-w-5xl mx-auto" id="about">
+    <h3 class="text-3xl font-bold text-green-400 mb-6 border-b-4 border-green-600 inline-block pb-1">What is a Minecraft Bedrock Edition Addon?</h3>
+    <p class="text-gray-300 text-lg leading-relaxed mb-8">
+      Minecraft Bedrock Edition addons are custom modifications that change or enhance the gameplay experience by adding new features, behaviors, textures, and entities. They allow players to personalize their worlds beyond the default game content without altering the core game files.
+    </p>
+    <h3 class="text-3xl font-bold text-green-400 mb-6 border-b-4 border-green-600 inline-block pb-1">Purpose of Minecraft Bedrock Edition Addons</h3>
+    <p class="text-gray-300 text-lg leading-relaxed">
+      These addons serve to expand creativity and gameplay possibilities by introducing new mobs, blocks, items, and mechanics. They help players customize their Minecraft worlds, create unique adventures, and share their creations with the community, enriching the overall Minecraft experience.
+    </p>
+  </section>
+  <section class="mb-20 max-w-5xl mx-auto" id="tutorials">
+    <h3 class="text-3xl font-bold text-green-400 mb-6 border-b-4 border-green-600 inline-block pb-1">How to Make Your Own Addons</h3>
+    <div class="space-y-8">
+      <article class="bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col">
+        <h4 class="text-2xl font-semibold mb-2">Addon Setup & Folder Structure</h4>
+        <ul class="list-disc list-inside text-gray-300">
+          <li>Set up your workspace with the necessary tools and software.</li>
+          <li>Create the correct folder structure for your addon files.</li>
+          <li>Organize assets like textures, models, and behavior files properly.</li>
+          <li>Ensure your addon follows Minecraft Bedrock Edition addon guidelines.</li>
+        </ul>
+      </article>
+      <article class="bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col">
+        <h4 class="text-2xl font-semibold mb-2">Editing JSON Files</h4>
+        <ul class="list-disc list-inside text-gray-300">
+          <li>Open JSON files in a code editor like Visual Studio Code or Notepad++.</li>
+          <li>Modify entity behaviors, properties, and textures using JSON syntax.</li>
+          <li>Validate your JSON files to avoid syntax errors.</li>
+          <li>Test changes incrementally to ensure expected behavior.</li>
+        </ul>
+      </article>
+      <article class="bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col">
+        <h4 class="text-2xl font-semibold mb-2">Testing Your Addons</h4>
+        <ul class="list-disc list-inside text-gray-300">
+          <li>Import your addon into Minecraft Bedrock Edition.</li>
+          <li>Create or edit a world to apply your addon.</li>
+          <li>Check for correct functionality and fix any issues.</li>
+          <li>Iterate on your addon based on test results.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-green-700 text-green-100 py-6 mt-auto sticky bottom-0">
+  <div class="container mx-auto px-6 text-center text-sm md:text-base">
+    <p>© 2025 Blockopedia. All rights reserved.</p>
+    <p class="mt-2">This site offers a variety of creative Minecraft add‑ons to enhance your gameplay. It is not affiliated with or endorsed by Mojang Studios.</p>
+    <p class="mt-2">Follow us on
+      <a aria-label="Facebook" class="text-green-300 hover:text-green-100 mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+      <a aria-label="Twitter" class="text-green-300 hover:text-green-100 mx-1" href="#"><i class="fab fa-twitter"></i></a>
+      <a aria-label="YouTube" class="text-green-300 hover:text-green-100 mx-1" href="#"><i class="fab fa-youtube"></i></a>
+    </p>
+  </div>
+</footer>
+
+<script>
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+menuBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+  menuBtn.classList.toggle('open');
+});
+</script>
+</body>
+</html>
